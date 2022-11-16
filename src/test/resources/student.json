@@ -1,0 +1,8 @@
+{
+  "firstname": "Alexey",
+  "lastname": "Orlov",
+  "age": 26,
+  "email": "aorlov@example.ru",
+  "homework": ["Lesson1", "Lesson2", "Lesson3", "Lesson4", "Lesson5", "Lesson6"],
+  "teacher": "Dmitrii Tuchs"
+}
