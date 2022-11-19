@@ -22,7 +22,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class FileTest {
 
     @Test
-    void JsonFileTest () throws Exception {
+    void jsonFileTest () throws Exception {
         File file = new File("src/test/resources/student.json");
         ObjectMapper objectMapper = new ObjectMapper();
         Student student = objectMapper.readValue(file, Student.class);
@@ -37,7 +37,7 @@ public class FileTest {
 
     ClassLoader cl = FileTest.class.getClassLoader();
     @Test
-    void ReadingArchiveTest () throws Exception {
+    void readingArchiveTest () throws Exception {
         ZipFile zf = new ZipFile(new File("src/test/resources/Desktop.zip"));
         try (ZipInputStream is = new ZipInputStream(cl.getResourceAsStream("Desktop.zip"))) {
             ZipEntry entry;
